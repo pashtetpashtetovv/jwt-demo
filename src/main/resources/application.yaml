@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/service-control
+    username: service-root
+    password: BBJHYGDF7654cxdDCccgC464FCDGf!
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+  jpa:
+    defer-datasource-initialisation: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      #ddl-auto: create-drop
+    show-sql: true
+app-properties:
+  jwtSecret: 68q7345cgb98w45nmyv87245tghyvc90ijuhnmvretuiybgvn459nyht870xgc87w0
+  jwtExpirationMs: 86400000
